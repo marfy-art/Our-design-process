@@ -390,7 +390,7 @@ body{
 
 /* Hover design :start */
 
-.our-design-process-thumbnaile-card-clickable-area-01:hover .hover-number-01 h2{
+/* .our-design-process-thumbnaile-card-clickable-area-01:hover .hover-number-01 h2{
     display: block;
     padding-bottom: 20px;
 }
@@ -411,7 +411,82 @@ body{
 
 .our-design-process-thumbnaile-card-clickable-area-01:hover .circle-image-02{
     opacity: 0;
+} */
+
+
+/* Hover design :start */
+
+/* Hover design :start */
+
+/* Hover design :start */
+
+.our-design-process-thumbnaile-card-clickable-area-01:hover .hover-number-01 h2,
+.our-design-process-thumbnaile-card-clickable-area-02:hover .hover-number-02 h2,
+.our-design-process-thumbnaile-card-clickable-area-03:hover .hover-number-03 h2 {
+    display: block;
+    padding-bottom: 20px;
 }
+
+/* Define keyframe animation */
+@keyframes bounceDrop {
+    0% {
+        top: -50px; /* Initial position above */
+        opacity: 0; /* Start invisible */
+    }
+    25% {
+        top: 20px; /* Bounce down */
+        opacity: 1; /* Fade in */
+    }
+    50% {
+        top: -40px; /* Bounce higher */
+    }
+    75% {
+        top: 10px; /* Bounce slightly lower */
+    }
+    100% {
+        top: 0; /* Return to original position */
+    }
+}
+
+/* Apply the animation to circle images */
+.our-design-process-thumbnaile-card-circle-image-01,
+.our-design-process-thumbnaile-card-circle-image-02,
+.our-design-process-thumbnaile-card-circle-image-03 {
+    transition: top 0.5s ease;
+}
+
+/* On hover, trigger the bounceDrop animation */
+.our-design-process-thumbnaile-card-clickable-area-01:hover .our-design-process-thumbnaile-card-circle-image-01,
+.our-design-process-thumbnaile-card-clickable-area-02:hover .our-design-process-thumbnaile-card-circle-image-02,
+.our-design-process-thumbnaile-card-clickable-area-03:hover .our-design-process-thumbnaile-card-circle-image-03 {
+    animation: bounceDrop 0.5s ease;
+}
+
+
+
+
+
+.our-design-process-thumbnaile-card-clickable-area-01:hover .our-design-process-thumbnaile-card-circle-image-01,
+.our-design-process-thumbnaile-card-clickable-area-02:hover .our-design-process-thumbnaile-card-circle-image-02,
+.our-design-process-thumbnaile-card-clickable-area-03:hover .our-design-process-thumbnaile-card-circle-image-03 {
+    top: 0;
+}
+
+.our-design-process-thumbnaile-card-clickable-area-01:hover .our-design-process-thumbnaile-card-arrow-icon,
+.our-design-process-thumbnaile-card-clickable-area-02:hover .our-design-process-thumbnaile-card-arrow-icon,
+.our-design-process-thumbnaile-card-clickable-area-03:hover .our-design-process-thumbnaile-card-arrow-icon {
+    opacity: 1;
+}
+
+.our-design-process-thumbnaile-card-clickable-area-01:hover .our-design-process-thumbnaile-card-number,
+.our-design-process-thumbnaile-card-clickable-area-02:hover .our-design-process-thumbnaile-card-number,
+.our-design-process-thumbnaile-card-clickable-area-03:hover .our-design-process-thumbnaile-card-number {
+    gap: 320px;
+    transition: transform 0.6s ease;
+}
+
+
+
 
 
 
